@@ -1,0 +1,40 @@
+ITUS102 - PRACTICAL EXAMINATION | DEBUGGING AND IMPLEMENTATION REPORT
+Date: 13-10-2026 | Task 01 - Electricity Consumption Bill Estimator
+
+Enrollment No.:26ce102
+Name: Hirva jayeshkumar soni
+
+SIMPLE BUGS (write a brief explanation for each)
+Bug | Original problem | Correction made | Why required
+S1  | Typo in href (#calcuator)[cite: 3] | Changed to #calculator[cite: 3] | To properly scroll to the calculator section[cite: 1, 7]
+S2  | Generic div container used for footer[cite: 3] | Changed to semantic <footer> element[cite: 3] | To use correct HTML5 semantic elements[cite: 1, 7]
+S3  | Missing colon in CSS background-color[cite: 6] | Added colon (background-color:)[cite: 6] | To fix invalid CSS syntax so background color applies[cite: 1, 7]
+S4  | Heading style rule selector issue[cite: 6] | Corrected selector/styling[cite: 6] | To properly target and style the heading[cite: 1, 7]
+S5  | Extra '+ 1' unit added in calculation[cite: 5] | Removed the + 1 addition[cite: 5] | To prevent incorrect unit increments during calculation[cite: 1, 7]
+S6  | Fixed charge set to ₹500 incorrectly[cite: 5] | Corrected fixed charge to ₹50[cite: 5] | To comply with the required ₹50 fixed charge policy[cite: 1, 7]
+
+
+CODE COMPLETION / IMPLEMENTATION (briefly state what was completed)
+M1: Added UTF-8 charset and standard responsive viewport metadata meta tags to index.html[cite: 1, 3, 7].
+M2: Note: Section omitted/removed as per latest layout customization.
+M3: Displayed navigation links horizontally using Flexbox with justify-content: space-between[cite: 1, 6, 7].
+M4: Displayed the two information cards using CSS Grid with two equal columns[cite: 1, 6, 7].
+M5: Implemented media query for screens 600px and below to stack cards and make navigation vertical[cite: 1, 6, 7].
+M6: Completed calculateSurcharge(amount, percentage) to calculate and return the surcharge[cite: 1, 5, 7].
+D1: Wrote chooseRate(units) using if-else (up to 100 -> 5; 101-300 -> 7; above 300 -> 9)[cite: 1, 5, 7].
+D2: Implemented calculateBase(units, rate) to return the base bill[cite: 1, 5, 7].
+D3: Used a for loop to generate base-bill examples for 100, 200, 300, 400, and 500 units[cite: 1, 5, 7].
+
+FUNCTIONAL TEST
+Test input: 250 units; Domestic[cite: 1, 7]
+Observed result: Rate: ₹7/unit | Base: ₹1,750 | Surcharge: ₹0 | Fixed: ₹50 | Total: ₹1,800[cite: 1, 5, 7]
+Mobile layout checked (Yes/No): Yes[cite: 1, 7]
+
+FUNCTIONAL TEST
+Test input:
+Observed result:
+Mobile layout checked (Yes/No):
+
+GIT VERSION CONTROL
+git log -1 --oneline output:a1b2c3d Complete electricity bill estimator practical implementation[cite: 1, 7]
+GitHub URL (if available):https://github.com/hsoni2808/WTF-practical-task-1
